@@ -195,7 +195,7 @@ with aba_dashboard:
             fig = px.bar(x=meses, y=valores, labels={'x': 'Mês', 'y': 'Gasto Total (R$)'},
                          title="Gastos Mensais", text=valores)
             fig.update_traces(texttemplate='%{text:.2f}', textposition='outside')
-            st.plotly_chart(fig, user_container_width=True)
+            st.plotly_chart(fig, use_container_width=True)
         else:
             st.info("Nenhuma compra registrada para mostrar os gastos mensais.")
 
@@ -254,7 +254,7 @@ with aba_dashboard:
             px = importlib.import_module("plotly.express")
             fig = px.pie(values=categorias_totais.values(), names=categorias_totais.keys(), title="Proporção de Gastos por Categoria")
             fig.update_traces(textposition='inside', textinfo='percent+label')
-            st.plotly_chart(fig, user_container_width=True)
+            st.plotly_chart(fig, use_container_width=True)
         else:
             st.info("Nenhuma compra registrada para mostrar a proporção por categoria.")
     
@@ -290,7 +290,7 @@ with aba_dashboard:
 
             top_categorias = dict(sorted(categorias_totais.items(), key=lambda x: x[1], reverse=True)[:3])
             fig = px.pie(values=top_categorias.values(), names=top_categorias.keys(), title=f"Top 3 Categorias em {mes_selecionado}")
-            st.plotly_chart(fig, user_container_width=True)
+            st.plotly_chart(fig, use_container_width=True)
         else:
             st.info("Nenhuma compra registrada para mostrar o relatório mensal.")
        
