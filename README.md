@@ -3,6 +3,11 @@
 Aplicação em **Python + Streamlit** para controle de compras de mercado.  
 Permite cadastrar produtos, acompanhar histórico, gerar relatórios mensais e visualizar gráficos interativos de gastos por categoria e período.
 
+## Acesse o App
+O projeto está disponível online pelo Streamlit:
+[Clique aqui para abrir o app](https://controle-do-mercado.streamlit.app)
+
+
 ---
 
 ## 🚀 Funcionalidades
