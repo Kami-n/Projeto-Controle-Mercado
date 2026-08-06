@@ -1,135 +1,97 @@
 [
-    {
-        "produto": "queijo",
+  {
+    "compra_id": 1,
+    "data": "2026-08-05",
+    "produtos": [
+      {
+        "nome": "Água 1,5L",
+        "quantidade": 1,
+        "preco_unitario": 3.49,
+        "categoria": "Bebidas",
+        "total": 31.25
+      },
+      {
+        "nome": "Cacetinho",
+        "quantidade": 8,
+        "preco_unitario": 2.27,
+        "categoria": "Padaria",
+        "total": 31.25
+      }
+      {
+        "nome": "Chocolate",
+        "quantidade": 1,
+        "preco_unitario": 5.99,
+        "categoria": "Bomboniere",
+        "total": 31.25
+      }
+      {
+        "nome": "Queijo",
+        "quantidade": 8,
+        "preco_unitario": 1.52,
+        "categoria": "Laticínios",
+        "total": 31.25
+      }
+      {
+        "nome": "Waffer Hesrhey",
+        "quantidade": 1,
+        "preco_unitario": 4.99,
+        "categoria": "Bomboniere",
+        "total": 31.25
+      }
+      {
+        "nome": "Linguiça Fininha",
+        "quantidade": 1,
+        "preco_unitario": 7.99,
+        "categoria": "Carnes",
+        "total": 31.25
+      }
+    ]
+  },
+  {
+    "compra_id": 2,
+    "data": "2026-07-24",
+    "produtos": [
+      {
+        "nome": "Cerveja Flying Fish",
         "quantidade": 6,
-        "preco_unitario": 8.0,
-        "total": 48.0,
-        "data": "2026-04-30"
-    },
-    {
-        "produto": "amaciante",
+        "preco_unitario": 5.79,
+        "categoria": "Bebidas",
+        "total": 82.58
+      }
+      {
+        "nome": "Suco Naturale Laranja 1L",
         "quantidade": 1,
-        "preco_unitario": 0.0,
-        "data": "2026-04-30",
-        "total": 0.0
-    },
-    {
-        "produto": "ovos",
+        "preco_unitario": 9.90,
+        "categoria": "Bebidas",
+        "total": 82.58
+      }
+      {
+        "nome": "Biscoito de milho",
         "quantidade": 1,
-        "preco_unitario": 0.0,
-        "data": "2026-04-30",
-        "total": 0.0
-    },
-    {
-        "produto": "arroz",
-        "quantidade": 2,
-        "preco_unitario": 0.0,
-        "data": "2026-04-30",
-        "total": 0.0
-    },
-    {
-        "produto": "suco ",
-        "quantidade": 1,
-        "preco_unitario": 0.0,
-        "data": "2026-04-30",
-        "total": 0.0
-    },
-    {
-        "produto": "ovos",
-        "quantidade": 2,
-        "preco_unitario": 0.0,
-        "data": "2026-04-30",
-        "total": 0.0
-    },
-    {
-        "produto": "margarina",
-        "quantidade": 1,
-        "preco_unitario": 5.8,
-        "data": "2026-04-30",
-        "total": 5.8
-    },
-    {
-        "produto": "arroz",
-        "quantidade": 4,
-        "preco_unitario": 4.75,
-        "data": "2026-04-30",
-        "total": 19.0
-    },
-    {
-        "produto": "sabonete",
-        "quantidade": 1,
-        "preco_unitario": 0.0,
-        "data": "2026-04-30",
-        "total": 0.0
-    },
-    {
-        "produto": "presunto",
-        "quantidade": 1,
-        "preco_unitario": 6.7,
-        "data": "2026-04-30",
-        "total": 6.7
-    },
-    {
-        "produto": "vassoura",
-        "quantidade": 1,
-        "preco_unitario": 15.0,
-        "data": "2026-04-30",
-        "total": 15.0
-    },
-    {
-        "produto": "cuca",
-        "quantidade": 1,
-        "preco_unitario": 0.0,
-        "data": "2026-04-30",
-        "total": 0.0
-    },
-    {
-        "produto": "massa",
-        "quantidade": 6,
-        "preco_unitario": 4.5,
-        "data": "2026-04-30",
-        "total": 27.0
-    },
-    {
-        "produto": "leite",
+        "preco_unitario": 5.76,
+        "categoria": "Padaria",
+        "total": 82.58
+      }
+      {
+        "nome": "Cerveja Original 473ml",
         "quantidade": 3,
-        "preco_unitario": 4.5,
-        "data": "2026-04-30",
-        "total": 13.5
-    },
-    {
-        "produto": "massa",
+        "preco_unitario": 5.19,
+        "categoria": "Bebidas",
+        "total": 82.58
+      }
+      {
+        "nome": "Bolo de milho com goiabada",
+        "quantidade": 1,
+        "preco_unitario": 15.57,
+        "categoria": "Padaria",
+        "total": 82.58
+      }
+      {
+        "nome": "Cacetinho",
         "quantidade": 6,
-        "preco_unitario": 4.3,
-        "data": "2026-04-30",
-        "total": 25.799999999999997
-    },
-    {
-        "produto": "ovos",
-        "quantidade": 4,
-        "preco_unitario": 4.3,
-        "data": "2026-04-30",
-        "total": 17.2
-    },
-    {
-        "produto": "massa",
-        "quantidade": 2,
-        "preco_unitario": 6.3,
-        "data": "2026-04-30",
-        "total": 12.6
-    },
-    {
-        "produto": "\u00f3leo",
-        "quantidade": 2,
-        "preco_unitario": 6.3,
-        "data": "2026-04-30",
-        "total": 12.6
-    },
-    {
-        "produto": "feij\u00e3o",
-        "quantidade": 2,
-        "preco_unitario": 11.79,
-        "data": "2026-04-30",
-        "total": 23.58
-    }
+        "preco_unitario": 3.28,
+        "total": 82.58
+      }
+    ]
+  }
 ]

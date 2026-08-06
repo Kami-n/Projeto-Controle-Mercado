@@ -15,17 +15,21 @@ def salvar_dados(dados):
     with open(ARQUIVO, 'w') as f:
         json.dump(dados, f, indent=4)
 
-def adicionar_compra(produto, quantidade, preco_unitario):
-    total = quantidade * preco_unitario
+def adicionar_compra(produto, data=None):
     dados = carregar_dados()
-    compra = {
-        'produto': produto,
-        'quantidade': quantidade,
-        'preco_unitario': preco_unitario,
-        'data': datetime.now().strftime("%Y-%m-%d"),
-        'total': total
-    }
-    dados.append(compra)
+    compra_id = len(dados) + 1
+    if not data:
+        data = datetime.now().strftime("%Y-%m-%d")
+    for p in produtos:
+        p["total"] = p["quantidade"] * p["preco_unitario"]
+
+    nova_compra = {
+        "id": compra_id,
+        "data": data,
+        "produtos": produtos,
+    }   
+
+    dados.append(nova_compra)
     salvar_dados(dados)
 
 def gastos_mensais():
@@ -33,16 +37,21 @@ def gastos_mensais():
     resumo = {}
     for compra in dados:
         mes = compra["data"][:7]  # Extrai o ano e mês
-        resumo[mes] = resumo.get(mes, 0) + compra["total"]
+        total_compra = sum(p["total"] for p in compra["produtos"])
+        resumo[mes] = resumo.get(mes, 0) + total_compra
     return resumo
 
-def editar_compra(index, produto, quantidade, preco_unitario):
+def editar_compra(index, produtos, data=None):
     dados = carregar_dados()
+    if data is None:
+        data = dados[index]['data']  # Mantém a data original se não for fornecida
+
+    for p  in produtos:
+        p["total"] = p["quantidade"] * p["preco_unitario"]
+    
     dados[index] = {
-            'produto': produto,
-            'quantidade': quantidade,
-            'preco_unitario': preco_unitario,
-            'total': quantidade * preco_unitario,
+            'compra_id': dados[index]['compra_id'],
+            'produtos': produtos,
             'data': dados[index]['data']  # Mantém a data original
     }
     salvar_dados(dados)
